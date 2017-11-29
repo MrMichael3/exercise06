@@ -2,8 +2,7 @@ from moduleElement import *
 
 class Module(object):
 
-
-    ######## CODE MISSING HERE
+module_count = 0
 
     def __init__(self,ects,title,semester,grade=None):
         "constructor for class module"
@@ -16,8 +15,7 @@ class Module(object):
         self.dates = []
 
         self.elements = []
-
-        ######## CODE MISSING HERE
+        __class__.module_count += 1
 
 
     def get_important_dates_overview(self):
@@ -43,12 +41,11 @@ class Module(object):
         self.elements.append((obj))
 
     def get_title(self):
-        pass
-        ######## CODE MISSING HERE
+        return self.title
 
     def get_grade(self):
-        pass
-        ######## CODE MISSING HERE
+        return self.grade
+
 
 #########################################################################
 
